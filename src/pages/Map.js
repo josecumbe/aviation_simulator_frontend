@@ -19,7 +19,7 @@ export default function Map() {
    
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyAlWnvLoFl72OeO3FpOkFBObwN5Vr6EkZA"
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API
       });
 
     return <div className="map">
