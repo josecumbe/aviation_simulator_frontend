@@ -1,0 +1,143 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000 url('./assets/background.jpg') no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background: #f1f1f1;
+  margin: 0 auto 0;
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs  {
+  background: white;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 4px;
+  background: rgb(88, 147, 241);
+}
+
+
+
+button {
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  background: white;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.table-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 18px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+.add-receiver {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.add-receiver h2{
+  word-break: break-all;
+  text-align: center;
+}
+.add-receiver form {
+  text-align: center;
+}
+
+.add-receiver form input {
+  padding: 10px;
+  margin: 5px;
+}
+
+#btn-add {
+  padding: 10px;
+  width: 80px;
+  background-color: aqua;
+}
+
+input{
+  width: 230px;
+} 
+
+
+
