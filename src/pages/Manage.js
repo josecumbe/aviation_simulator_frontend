@@ -98,7 +98,7 @@ export default function Manage({ history }) {
                     onKeyPress={onKeyPressEventDecimal}
                     />
                     <input
-                    type="Number"
+                    type="text"
                     name="longitude"
                     required="required"
                     placeholder="Enter longitude..."
